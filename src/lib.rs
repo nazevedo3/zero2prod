@@ -8,6 +8,7 @@ async fn health_check() -> HttpResponse {
 }
 
 #[derive(Deserialize)]
+#[allow(dead_code)]
 struct FormData {
     email: String,
     name: String,
