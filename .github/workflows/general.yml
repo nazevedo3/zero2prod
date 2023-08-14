@@ -1,13 +1,6 @@
 name: Rust
 
-on:
-  push:
-    branches:
-      - db-setup
-  pull_request:
-    types: [opened, synchronize, reopened]
-    branches:
-      - db-setup
+on: [push, pull_request]
 
 env:
   CARGO_TERM_COLOR: always
