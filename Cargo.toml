@@ -18,6 +18,8 @@ rustflags = ["-C", "link-arg=-fuse-ld=/usr/local/bin/zld"]
 rustflags = ["-C", "link-arg=-fuse-ld=/usr/local/bin/zld"]
 
 [dependencies]
+validator = "0.16"
+unicode-segmentation = "1"
 serde-aux = "4"
 tracing-actix-web = "0.7"
 secrecy = { version = "0.8", features = ["serde"] }
@@ -49,4 +51,8 @@ features = [
 
 
 [dev-dependencies]
+quickcheck = "0.9.2"
+quickcheck_macros = "0.9.1"
+fake = "~2.3"
+claims = "0.7"
 reqwest = "0.11"
